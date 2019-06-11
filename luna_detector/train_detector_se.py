@@ -90,9 +90,8 @@ def main():
     net = DataParallel(net)
     datadir = config_training['preprocess_result_path']
 
-    luna_data = np.load('./luna_folds/luna_fold6.npy')
-    luna_train = luna_data[1]
-    luna_test = luna_data[0]
+    luna_train = np.load('./luna_train.npy')
+    luna_test = np.load('./luna_test.npy')
     
     if args.test == 1:
         print("start test")
