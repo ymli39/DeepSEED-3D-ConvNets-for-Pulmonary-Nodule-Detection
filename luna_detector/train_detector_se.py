@@ -90,7 +90,7 @@ def main():
     net = DataParallel(net)
     datadir = config_training['preprocess_result_path']
 
-    luna_data = np.load('/home/jiancong/LungNodule_DL/detector/luna_folds/luna_fold6.npy')
+    luna_data = np.load('./luna_folds/luna_fold6.npy')
     luna_train = luna_data[1]
     luna_test = luna_data[0]
     
