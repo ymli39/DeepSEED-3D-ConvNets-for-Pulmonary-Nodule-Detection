@@ -64,9 +64,9 @@ The FROC evaluation script is provided from LUNA16 website, you can find the scr
 
 You could refer to the arxiv paper for more details and performance:
 
-@article{li2019deepseed,
-  title={DeepSEED: 3D Squeeze-and-Excitation Encoder-Decoder ConvNets for Pulmonary Nodule Detection},
-  author={Li, Yuemeng and Liu, Hangfan and Fan, Yong},
-  journal={arXiv preprint arXiv:1904.03501},
-  year={2019}
-}
+	@article{li2019deepseed,
+		title={DeepSEED: 3D Squeeze-and-Excitation Encoder-Decoder ConvNets for Pulmonary Nodule Detection},
+		author={Li, Yuemeng and Liu, Hangfan and Fan, Yong},
+		journal={arXiv preprint arXiv:1904.03501},
+		year={2019}
+	}
