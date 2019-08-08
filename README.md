@@ -30,7 +30,7 @@ Run prepare.py, output LUNA16 data can be found inside folder Preprocess_result_
 Training:
 Go to ./detector directory, the model can be trained by calling the following script:
 
-CUDA_VISIBLE_DEVICES=0,1,2,3,4 python train_detector_se.py -b 16 --save-dir /train_result/ --epochs 150
+	CUDA_VISIBLE_DEVICES=0,1,2,3,4 python train_detector_se.py -b 16 --save-dir /train_result/ --epochs 150
 
 The output model can be found inside ./train_result/ folder.
 
@@ -40,7 +40,7 @@ The output model can be found inside ./train_result/ folder.
 Testing:
 In order to obtain the predicted label, go to ./detector directory, the model can be tested by calling the following script:
 
-CUDA_VISIBLE_DEVICES=0,1,2,3,4 python train_detector_se.py -b 1 --resume ‘best_model.ckpt’ --test 1 --save-dir /output/
+	CUDA_VISIBLE_DEVICES=0,1,2,3,4 python train_detector_se.py -b 1 --resume ‘best_model.ckpt’ --test 1 --save-dir /output/
 
 The bbox output can be found inside ./output/bbox/, the predicted bounding boxes and ground truth bounding boxes will be saved in this direction.
 
