@@ -35,7 +35,7 @@ parser.add_argument('--gpu', default='all', type=str, metavar='N',
 parser.add_argument('--n_test', default=8, type=int, metavar='N',
                     help='number of gpu for test')
 
-LOAD_DIR = '/home/jiancong/LungNodule_DL/detector/test_results/baseline_se_focal_newparam/'
+LOAD_DIR = '' #directory for you to save your models
 
 def main():
     global args
