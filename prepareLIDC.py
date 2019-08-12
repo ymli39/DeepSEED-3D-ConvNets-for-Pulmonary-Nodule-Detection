@@ -141,7 +141,7 @@ def full_prep():
     prep_folder = "/data/LunaProj/LIDC/processed/"
     data_path = "/data/LunaProj/LIDC/merged/"
     
-    alllabelfiles = "/home/jiancong/LungNodule_DL/LIDC/labels/new_nodule.csv"
+    alllabelfiles = "/LungNodule_DL/LIDC/labels/new_nodule.csv" #this is the file contains all nodule locations for LIDC
     
     alllabel = np.array(pandas.read_csv(alllabelfiles))
     filelist = os.listdir(data_path)
