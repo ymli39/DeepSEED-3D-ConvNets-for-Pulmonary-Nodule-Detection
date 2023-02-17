@@ -543,8 +543,8 @@ if __name__ == '__main__':
     ################################Need to change this part#######################################################
     annotations_filename = './labels/annos.csv'
     annotations_excluded_filename = './labels/excluded.csv'
-    seriesuids_filename = './labels/lunaTestID.csv'
-    results_filename = './DL/predanno-1.5.csv'
-    outputDir = './DL/'
+    seriesuids_filename = './labels/luna_test.csv'
+    results_filename = './test_results/predanno0.3.csv'
+    outputDir = './test_results/predanno0.3/'
     noduleCADEvaluation(annotations_filename,annotations_excluded_filename,seriesuids_filename,results_filename,outputDir)
     print ("Finished!")
