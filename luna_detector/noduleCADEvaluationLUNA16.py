@@ -168,6 +168,8 @@ def evaluateCAD(seriesUIDs, results_filename, outputDir, allNodules, CADSystemNa
     
     for seriesuid in seriesUIDs:
         
+        seriesuid = seriesuid.zfill(3) #if you renamed the file starts with 0 to 888, you should add 0 fill to make the seriesuid from 0 to 000
+        
         # collect candidates from result file
         nodules = {}
         header = results[0]
@@ -175,6 +177,7 @@ def evaluateCAD(seriesUIDs, results_filename, outputDir, allNodules, CADSystemNa
         i = 0
         for result in results[1:]:
             nodule_seriesuid = result[header.index(seriesuid_label)]
+            nodule_seriesuid = nodule_seriesuid.zfill(3) #zfill nodule_seriesuid to make it consistent with seriesuid
             
             if seriesuid == nodule_seriesuid:
                 nodule = getNodule(result, header)
@@ -231,6 +234,9 @@ def evaluateCAD(seriesUIDs, results_filename, outputDir, allNodules, CADSystemNa
 
     # -- loop over the cases
     for seriesuid in seriesUIDs:
+                
+        seriesuid = seriesuid.zfill(3)
+                
         # get the candidates for this case
         try:
             candidates = allCandsCAD[seriesuid]
