@@ -16,7 +16,7 @@ you can directly run file noduleCADEvaluationLUNA16.pyto check the results. The 
 
 Bug is caused by ID mismatch, for example ID 56, in predicted file the script reads the id as '56' but in gt file it reads id as '056'. You might not encounter this issue with other benchmark code since they kept original dicom id as the file id name (i.e., xxx.xxxxxx.xxxxxxxxx). 
 
-During preprocessing, I renamed all files starts from 0 to 888. The bug apears for any ID numbers ranged from 0 to 99.
+During preprocessing, I renamed all files starts from 0 to 888. The bug appears for any ID numbers ranged from 0 to 99.
 
 -------------------------------------------------------------
 
